@@ -1,0 +1,132 @@
+RESERVE BANK OF INDIA - MASTER DIRECTIONS ON CYBER RESILIENCE AND DIGITAL PAYMENT SECURITY CONTROLS FOR NON-BANK PAYMENT SYSTEM OPERATORS (PSOs)
+Circular No: RBI/DPSS/2024-25/123 | CO.DPSS.OVRST.No.S447/06-26-002/2024-25 | July 30, 2024
+Issued under Section 10(2) read with Section 18 of Payment and Settlement Systems Act, 2007 (Act 51 of 2007).
+
+SECTION I – PRELIMINARY
+1. Introduction: Issued in public interest to ensure cyber resilience and secure digital payment systems.
+2. Short Title: RBI (Cyber Resilience and Digital Payment Security Controls for non-bank PSOs) Master Directions, 2024.
+3. Phased Implementation Timeline:
+   - Large non-bank PSOs (CCIL, NPCI, NPBL, Card Networks, ATM Networks, WLAOs, Large PPIs, TReDS, BBPOUs, Payment Aggregators): April 1, 2025.
+   - Medium non-bank PSOs (Cross-border MTSS, Medium PPIs): April 1, 2026.
+   - Small non-bank PSOs (Small PPIs, Instant Money Transfer): April 1, 2028.
+4. Applicability: All authorised non-bank PSOs.
+5. Ecosystem Adherence: PSOs shall ensure adherence by unregulated entities in digital payment ecosystem (payment gateways, third-party service providers, vendors) via mutual agreements and Board-approved policy.
+6. Purpose: Framework for information security preparedness with emphasis on cyber resilience.
+
+SECTION II – GOVERNANCE CONTROLS
+7. Board Oversight: Board responsible for info security & cyber resilience; delegation to Board sub-committee headed by cybersecurity expert, meeting at least once every quarter.
+8. Information Security (IS) Policy: Formulate Board-approved IS policy reviewed annually covering roles, cyber risk assessment/management, controls, training.
+9. Cyber Crisis Management Plan (CCMP): Distinct Board-approved CCMP to detect, contain, respond, and recover from cyber attacks (aligned with CERT-In, NCIIPC, IDRBT).
+10. Chief Information Security Officer (CISO): Accountability entrusted to senior executive (CISO) reporting directly to top management.
+11. KRIs & KPIs: Define Key Risk Indicators to identify risk events and Key Performance Indicators to assess control effectiveness; continuous sub-committee monitoring.
+12. IT Assessment Reports: Place system audit and VA/PT reports before IT oversight sub-committee in meeting immediately following report availability.
+13. Cyber Risk Assessment for Changes: Cyber risk assessment before launching new products, services, technologies, or major infrastructure changes under CISO oversight.
+
+SECTION III – BASELINE INFORMATION SECURITY MEASURES / CONTROLS
+14. Inventory Management:
+   (a) Record and classify all roles, assets (apps, data, infra, personnel), critical functions, third parties with criticality & business value.
+   (b) Process flow diagram of network resources, inter-connections, dependencies, and data flows.
+   (c) Asset details: identifier, network address, location, owner, End-of-Life Support (EoLS).
+15. Identity and Access Management (IAM):
+   (a) Policies and controls for access privileges and administration.
+   (b) Digital identity for all individuals with IT access, monitored till termination.
+   (c) Default authentication settings deactivated and changed prior to rollout.
+   (d) Access based on need-to-have, need-to-know, and Principle of Least Privilege.
+   (e) Privileged accounts require Multi-Factor Authentication (MFA), tight monitoring, and rotation policy.
+   (f) Centralized whitelist/blacklist for removable media and portable devices (laptops, smartphones).
+   (g) Remote/WFH access requires adequate precautions including MFA.
+   (h) Automatic limit, lock, and termination of system and remote sessions after pre-defined inactivity.
+   (i) Physical and environmental safeguards with periodic testing against disasters and physical threats.
+16. Network Security:
+   (a) Network devices configured and checked periodically for security rules.
+   (b) 24x7x365 Security Operations Centre (SOC) for centralized log monitoring, detection, escalation, and quick response.
+   (c) Automated SIEM correlating network/system alerts across business units to detect multi-faceted attacks.
+   (d) Anti-malware scanning all incoming data to prevent installation/infection.
+   (e) Multi-layered boundary defences monitoring network traffic and filtering ingress/egress data.
+   (f) Network segmentation based on role, location, environment (prod, test, dev); application & port whitelisting.
+   (g) Connect devices (laptops, desktops, mobiles) to network only after verifying compliance with security requirements.
+17. Application Security Life Cycle (ASLC):
+   (a) 'Secure by design' S-SDLC preventing security weaknesses during build.
+   (b) Multi-tier architecture segregating database layer from other layers for digital payment products.
+   (c) Source code acquisition or escrow arrangement for critical third-party applications to ensure continuity.
+18. Security Testing:
+   (a) Rigorous security testing (source code review, VA, PT) by qualified professionals at least annually in authenticated mode.
+   (b) Developer certificate of no vulnerabilities/malware/covert channels for third-party software; fresh cert on code changes.
+   (c) Time-bound remediation of deficiencies; report recurring issues to Board IT sub-committee with analysis.
+   (d) Pre-deployment security audits (VA/PT) before deploying or redeploying critical services and components.
+19. Vendor Risk Management:
+   (a) Security controls preventing infiltration into PSO network from vendor environments.
+   (b) Adhere to legal/regulatory requirements on geographical location of infrastructure and data storage (Data Localization), ensuring vendor compliance.
+   (c) Independent auditor certified assurance on cyber resilience for critical vendors.
+20. Data Security:
+   (a) Comprehensive Data Leak Prevention (DLP) policy for business and customer information (in transit and at rest).
+   (b) Mechanisms for traceability and visibility of data assets.
+   (c) Information Security Management System (ISMS) implementation based on standards (ISO 27001).
+   (d) Secure handling, processing, storage of PII; data-in-transit and data-at-rest encryption (data or channel encryption).
+   (e) Adhere to PCI-DSS guidelines and obtain PCI-DSS certification for card data storage.
+   (f) Half-yearly testing of backed-up data to ensure recovery without loss of transactions or audit trails.
+21. Patch and Change Management:
+   (a) Documented policy to identify and apply OEM patches.
+   (b) Immediate application of critical patches for well-known/reported attacks.
+   (c) Robust change management preserving overall IT setup integrity.
+   (d) Patches and changes tested in non-production before production implementation.
+22. Incident Response:
+   (a) Board-approved incident response mechanism with prompt notification to senior management, employees, regulators.
+   (b) Readiness for incident scenarios based on situational awareness and coordination.
+   (c) Post-incident forensic analysis and Root Cause Analysis (RCA) to avoid recurrence.
+   (d) Mandatory 6-hour incident reporting to RBI (Incident Reporting Format Annex 1) and CERT-In for cyber-attacks, outages, fraud, settlement delay.
+23. Business Continuity Plan (BCP):
+   (a) BCP based on cyber threat scenarios reviewed annually, including cyber incident response, resumption, and recovery.
+   (b) Safe resumption of critical operations aligned with Recovery Time Objective (RTO) and Recovery Point Objective (RPO).
+   (c) Strive to achieve near-zero RPO.
+   (d) Disaster Recovery (DR) facility located in a different seismic zone than Primary Data Centre (PDC) with defined data reconciliation.
+   (e) Half-yearly DR drills; urgent rectification of any RTO/RPO divergence.
+24. Application Programming Interfaces (APIs):
+   (a) Safeguards for APIs: Authentication and Authorization, Message Content Confidentiality, Resource Integrity, Availability & Threat Protection (anomaly identification).
+   (b) Adherence to relevant standards and globally recognized API security frameworks (OWASP API Top 10).
+25. Employee Awareness & Training:
+   (a) Periodic repeated training on info security for employees and vendors.
+   (b) Periodic evaluation of awareness; employees below benchmark score restricted/prohibited from accessing information assets.
+   (c) Board members and key senior management sensitized on info security and cyber risks.
+26. Cloud Security:
+   (a) Board-approved cloud operations policy covering cloud activities, CSP roles, data localisation, protection, and recoverability.
+   (b) Clear data segregation, stringent access control, and protection against co-mingling in multi-tenancy environments.
+   (c) Annual independent cyber security audit of CSP; annual review of CSP performance and resilience by Board IT sub-committee.
+27. Other Security Measures:
+   (a) Mandatory Multi-Factor Authentication (MFA) for all electronic payment debit transactions and cash withdrawals.
+   (b) Robust, centralized, secure authentication preventing unauthorized/spoofed transactions.
+   (c) Real-time / near real-time fraud monitoring solution to identify suspicious transactional behaviour and alert.
+   (d) 24x7x365 manned facility for swift resolution of fraudulent transactions reported by customers and prompt response to Law Enforcement Agencies (LEAs).
+   (e) Systematic audit log capture, analysis, storage, and archiving; unique user identification; 5-year log preservation.
+   (f) Scalable payment architecture commensurate with volume, reviewed by Board sub-committee.
+   (g) Secure email and messaging systems for inbound/outbound communication.
+   (h) Subscription to anti-phishing / anti-rogue app takedown services.
+   (i) Public awareness campaigns on fraud prevention and cyber threats.
+
+SECTION IV – DIGITAL PAYMENT SECURITY CONTROLS
+28. Online Transaction Alerts:
+   Real-time online alerts based on: failed transactions, velocity, new account parameters, time zone, geolocation, IP address origin (prohibited zones / rogue IPs), behavioural biometrics, point of compromise, mobile wallets/VPAs with recorded fraud, declined transactions, transactions with no approval code.
+29. Customer Notification Standards:
+   (a) Mandatory masking/redaction of bank account numbers, card numbers, and confidential info in SMS/email alerts.
+   (b) Online payments must display merchant name (not payment gateway/aggregator) and amount; fund transfers must display beneficiary name from account-maintaining entity.
+   (c) OTP must be mentioned at the end of notification message, explicitly referencing the specific transaction.
+30. In-App Fraudulent Transaction Marking:
+   Customer facility on mobile app/website with authentication to identify/mark a transaction as fraudulent for seamless immediate notification to payment instrument issuer.
+31. Mobile Payments Security:
+   (a) Anomaly and exception detection mechanisms ensuring app functions as programmed.
+   (b) Authenticated session and encryption intact throughout interaction; immediate session termination on interference or app closure with transaction resolution.
+   (c) Device binding / fingerprinting with hardware, software, and SIM; re-binding required if unused for specified policy period.
+   (d) Automatic termination of online session after fixed period of inactivity, prompting re-login.
+   (e) Maximum failed authentication attempts threshold after which mobile access is locked; secure re-activation; immediate failure notification.
+   (f) Control mechanism detecting presence of remote access applications (AnyDesk, TeamViewer, QuickSupport) and prohibiting mobile payment access while remote access is live.
+   (g) Mandatory 12-hour cooling period following any change in registered mobile number or email ID before permitting online payment transactions.
+32. Card Payments Security:
+   (a) Merchant card-capturing terminals validated against PCI-P2PE program.
+   (b) PoS terminals with PIN entry approved by PCI-PTS program.
+33. Card Networks Governance:
+   (a) Mandatory switch-level transaction limits at card, BIN, and card issuer levels.
+   (b) 24x7x365 alert mechanism triggered to card issuer upon suspicious incidents.
+   (c) Customer card details stored in encrypted form at all server locations; processing in readable format done securely.
+34. Prepaid Payment Instruments (PPIs):
+   (a) Communication of OTP and transaction alerts in vernacular languages of user's choice.
+   (b) Mandatory suitable cooling period for funds transfer and cash withdrawal following electronic loading of funds on PPI.

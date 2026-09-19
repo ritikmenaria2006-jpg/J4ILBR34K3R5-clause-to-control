@@ -1,0 +1,16 @@
+# SEBI Cybersecurity and Cyber Resilience Framework (CSCRF) - Extracted Regulatory Clauses
+
+[CLAUSE-CSCRF-4.1.2] Third-Party Vendor Data Isolation:
+External vendors, service providers, and outsourced contractors are strictly prohibited from exporting, downloading, or mass-querying production customer databases, personally identifiable records, or internal cryptographic materials under any circumstances. Access shall be limited to designated sandboxed telemetry.
+
+[CLAUSE-CSCRF-5.3.1] Systemic Risk & Market Threat Intelligence Access:
+Regulated entities must ensure that access to macro systemic market risk reports and consolidated vulnerability intelligence is restricted strictly to Authorized Compliance Officers, System Administrators, and certified statutory auditors. Unverified actors or external suppliers shall not access cross-institution vulnerability feeds.
+
+[CLAUSE-CSCRF-7.2.4] Dual-Authorization for Financial & Audit Tool Execution:
+Execution of diagnostic tools relating to institutional compliance verification, audit status retrieval, and policy conformance metrics must be restricted to verified internal Auditors and designated Administrative roles. Automated tools executed by unauthorized third parties shall be intercepted and rejected.
+
+[CLAUSE-CSCRF-8.1.9] Continuous Tool Call Interception & Session Provenance:
+All algorithmic workflows and autonomous AI agent operations interfacing with market infrastructure APIs must be subjected to real-time deterministic policy gating. Any tool request bearing malformed parameters or unverified contextual prompts must be preemptively terminated.
+
+[CLAUSE-CSCRF-9.4.0] Sanitization of Outbound Diagnostic Streams:
+Any diagnostic telemetry, logging payloads, or diagnostic tool exports released across departmental or institutional perimeters must undergo automated masking of sensitive institutional identifiers, internal IP ranges, and proprietary execution hashes.

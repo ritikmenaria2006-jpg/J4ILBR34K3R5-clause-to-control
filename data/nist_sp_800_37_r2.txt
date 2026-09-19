@@ -1,0 +1,92 @@
+NIST SPECIAL PUBLICATION 800-37, REVISION 2
+Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy
+Joint Task Force Interagency Working Group | National Institute of Standards and Technology (NIST)
+
+CHAPTER 1: INTRODUCTION & PURPOSE
+1.1 Background: Unified risk management across Civil, Defense, and Intelligence Communities under FISMA (44 U.S.C. 3551), Privacy Act 1974, OMB Circular A-130, EO 13800.
+1.2 Purpose and Applicability: Link organization-level governance (C-suite) with system-level engineering and authorization. Integrates Supply Chain Risk Management (SCRM) and Privacy Risk Management.
+1.3 Technology Neutrality: Technology-agnostic methodology applied to cloud, IoT, OT/ICS, mobile, and custom systems.
+1.4 Automation: Encourages automated GRC tools and continuous monitoring for near-real-time ongoing authorizations.
+
+CHAPTER 2: THE FUNDAMENTALS
+2.1 Organization-Wide Risk Management: 3-tier model:
+    - Level 1: Organization (Strategic, Risk Executive Function, Risk Tolerance)
+    - Level 2: Mission/Business Process (Enterprise Architecture, Baselines)
+    - Level 3: Information System (System-level engineering, controls, authorization)
+2.2 Authorization Boundaries: Defining scope of management and protection; subsystems, complex systems, external provider dependencies.
+2.3 Integration of Security & Privacy: Shared responsibility for confidentiality, integrity, availability, and individual privacy protections (notice, purpose limitation, quality).
+2.4 Supply Chain Risk Management (SCRM): Countering untrustworthy suppliers, counterfeiting, tampering, unauthorized code insertion.
+
+CHAPTER 3 & APPENDIX E: THE 7-STEP RMF PROCESS & TASKS
+STEP 1: PREPARE
+- Organization Level:
+  * Task P-1: Risk Management Roles (Identify & assign key roles: AO, CISO, SAOP, SO, CCP) [CSF: ID.AM-6, ID.GV-2]
+  * Task P-2: Risk Management Strategy (Establish organizational risk tolerance & SCRM strategy) [CSF: ID.RM, ID.SC]
+  * Task P-3: Risk Assessment - Organization (Aggregate system and organization-level risk) [CSF: ID.RA, ID.SC-2]
+  * Task P-4: Tailored Control Baselines & CSF Profiles (Optional: tailor SP 800-53B baselines) [CSF: Profile]
+  * Task P-5: Common Control Identification (Identify, document, publish inheritable common controls)
+  * Task P-6: Impact-Level Prioritization (Optional: prioritize high-water mark systems) [CSF: ID.AM-5]
+  * Task P-7: Continuous Monitoring Strategy - Organization (Establish organization-wide ISCM/PCM) [CSF: DE.CM, ID.SC-4]
+- System Level:
+  * Task P-8: Mission or Business Focus (Define supported missions & business processes) [CSF: ID.BE]
+  * Task P-9: System Stakeholders (Identify stakeholders across system lifecycle) [CSF: ID.AM, ID.BE]
+  * Task P-10: Asset Identification (Identify tangible & intangible assets requiring protection) [CSF: ID.AM]
+  * Task P-11: Authorization Boundary (Formally determine system authorization boundary)
+  * Task P-12: Information Types (Identify information types per NARA CUI / SP 800-60) [CSF: ID.AM-5]
+  * Task P-13: Information Life Cycle (Document data maps: create, process, store, transmit, dispose) [CSF: ID.AM-3, ID.AM-4]
+  * Task P-14: Risk Assessment - System (Conduct threat, vulnerability, impact assessment) [CSF: ID.RA, ID.SC-2]
+  * Task P-15: Requirements Definition (Define functional & assurance security/privacy requirements) [CSF: ID.GV, PR.IP]
+  * Task P-16: Enterprise Architecture (Determine placement in enterprise/security architecture)
+  * Task P-17: Requirements Allocation (Allocate requirements to machine, physical, human elements) [CSF: ID.GV]
+  * Task P-18: System Registration (Register system in organizational inventory) [CSF: ID.GV]
+
+STEP 2: CATEGORIZE
+- Task C-1: System Description (Document system characteristics, hardware, software, interfaces) [CSF: Profile]
+- Task C-2: Security Categorization (Apply FIPS 199/200 high-water mark for CIA impact: Low, Moderate, High) [CSF: ID.AM-1-5]
+- Task C-3: Security Categorization Review & Approval (AO and Senior Agency Official for Privacy approve)
+
+STEP 3: SELECT
+- Task S-1: Control Selection (Select baseline from SP 800-53 or organization-generated approach) [CSF: Profile]
+- Task S-2: Control Tailoring (Scoping considerations, parameter assignments, compensating controls) [CSF: Profile]
+- Task S-3: Control Allocation (Designate system-specific, hybrid, or common; allocate to elements) [CSF: PR.IP]
+- Task S-4: Documentation of Planned Control Implementations (Document in SSP and Privacy Plan) [CSF: Profile]
+- Task S-5: Continuous Monitoring Strategy - System (Define system-level assessment frequencies) [CSF: ID.GV, DE.CM]
+- Task S-6: Plan Review & Approval (Authorizing Official formally approves SSP and Privacy Plan)
+
+STEP 4: IMPLEMENT
+- Task I-1: Control Implementation (Implement controls using systems security engineering SP 800-160) [CSF: PR.IP-1, PR.IP-2]
+- Task I-2: Update Control Implementation Information (Document 'as-implemented' state and configuration baseline)
+
+STEP 5: ASSESS
+- Task A-1: Assessor Selection (Select independent assessor with required technical expertise)
+- Task A-2: Assessment Plan (Develop and approve security and privacy assessment plan per SP 800-53A)
+- Task A-3: Control Assessments (Conduct testing, evaluation, developmental testing, regression)
+- Task A-4: Assessment Reports (Produce Security Assessment Report (SAR) & Privacy Assessment Report (PAR))
+- Task A-5: Remediation Actions (Perform initial remediation on deficiencies; reassess remediated controls)
+- Task A-6: Plan of Action and Milestones (POAM) (Document scheduled milestones, resources, target dates) [CSF: ID.RA-6]
+
+STEP 6: AUTHORIZE
+- Task R-1: Authorization Package (Assemble SSP, SAR/PAR, POAM, and Executive Summary)
+- Task R-2: Risk Analysis and Determination (Analyze residual risk against organizational risk tolerance)
+- Task R-3: Risk Response (Implement course of action: Accept, Mitigate, Transfer, Avoid) [CSF: ID.RA-6]
+- Task R-4: Authorization Decision (Authorizing Official renders ATO, Common Control Auth, ATU, or Denial)
+- Task R-5: Authorization Reporting (Report decision, significant vulnerabilities, and risks to leadership)
+
+STEP 7: MONITOR
+- Task M-1: System and Environment Changes (Track hardware, software, firmware, physical changes) [CSF: DE.CM, ID.GV]
+- Task M-2: Ongoing Assessments (Assess controls on ongoing basis per continuous monitoring strategy) [CSF: ID.SC-4]
+- Task M-3: Ongoing Risk Response (Respond to new vulnerabilities, triggers, or alerts) [CSF: RS.AN]
+- Task M-4: Authorization Package Updates (Keep SSP, SAR, and POAM updated in real time) [CSF: RS.IM]
+- Task M-5: Security and Privacy Reporting (Generate periodic or event-driven posture reports)
+- Task M-6: Ongoing Authorization (Maintain time-driven and event-driven reauthorization evaluations)
+- Task M-7: System Disposal (Execute media sanitization per SP 800-88, de-registration, archiving)
+
+APPENDIX F: TYPES OF AUTHORIZATIONS
+- Authorization to Operate (ATO): Formal acceptance of risk for operational system.
+- Common Control Authorization: For inherited organization-wide controls.
+- Authorization to Use (ATU): Streamlined reciprocity for external/cloud services based on provider's ATO.
+- Denial of Authorization: Immediate halting of operations due to unacceptable risk.
+- Event-Driven Triggers: New zero-day threats, increased POAM items, architecture changes, supply chain disruptions.
+
+APPENDIX D: ROLES & RESPONSIBILITIES
+Authorizing Official (AO), AO Designated Representative, Chief Information Officer (CIO), Chief Acquisition Officer (CAO), Senior Agency Information Security Officer (CISO), Senior Agency Official for Privacy (SAOP), System Owner (SO), Common Control Provider (CCP), Control Assessor, System Security/Privacy Officer (ISSO/IPSO), Systems Security/Privacy Engineer, Enterprise Architect.

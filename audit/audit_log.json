@@ -1,0 +1,28 @@
+[
+  {
+    "timestamp": "2024-09-18T10:14:22.100000+00:00",
+    "role": "Admin",
+    "action": "get_global_risk_report",
+    "decision": "APPROVED",
+    "clause": "CLAUSE-CSCRF-5.3.1",
+    "reason": "Authorized execution under statutory mandate",
+    "pii_redacted": false
+  },
+  {
+    "timestamp": "2024-09-18T10:18:05.450000+00:00",
+    "role": "Vendor",
+    "action": "export_customer_data",
+    "decision": "BLOCKED",
+    "clause": "CLAUSE-CSCRF-4.1.2 & CLAUSE-DPDP-16.1",
+    "reason": "Policy matrix denied access for role 'Vendor' to 'export_customer_data'"
+  },
+  {
+    "timestamp": "2024-09-18T10:22:40.820000+00:00",
+    "role": "Auditor",
+    "action": "get_own_compliance_status",
+    "decision": "APPROVED",
+    "clause": "CLAUSE-CSCRF-7.2.4 & CLAUSE-DPDP-10.2",
+    "reason": "Authorized execution under statutory mandate",
+    "pii_redacted": false
+  }
+]

@@ -1,0 +1,153 @@
+PAYMENT CARD INDUSTRY DATA SECURITY STANDARD (PCI DSS)
+Requirements and Testing Procedures | Version 4.0.1 (June 2024)
+PCI Security Standards Council, LLC
+
+PRINCIPAL GOALS AND 12 REQUIREMENTS:
+
+GOAL 1: BUILD AND MAINTAIN A SECURE NETWORK AND SYSTEMS
+Requirement 1: Install and Maintain Network Security Controls (NSCs)
+- 1.1 Processes and mechanisms for installing and maintaining NSCs defined, documented, kept up to date, and understood.
+- 1.2 Configuration standards for NSC rulesets defined, implemented, and maintained.
+  * 1.2.1 Configuration standards for NSC rulesets.
+  * 1.2.2 Changes to network connections and NSC configurations managed via change control (Req 6.5.1).
+  * 1.2.3 Accurate network diagrams maintained showing all connections between CDE and other networks, including wireless.
+  * 1.2.4 Accurate data-flow diagrams maintained showing all account data flows across systems and networks.
+  * 1.2.5 All allowed services, protocols, and ports identified, approved, and have defined business need.
+  * 1.2.6 Security features implemented for insecure protocols/ports.
+  * 1.2.7 Configurations of NSCs reviewed at least once every 6 months.
+  * 1.2.8 NSC configuration files secured from unauthorized access and synchronized.
+- 1.3 Network access to and from CDE restricted.
+  * 1.3.1 Inbound traffic to CDE restricted to necessary; all other denied.
+  * 1.3.2 Outbound traffic from CDE restricted to necessary; all other denied.
+  * 1.3.3 NSCs installed between all wireless networks and CDE; wireless denied by default.
+- 1.4 Network connections between trusted and untrusted networks controlled.
+  * 1.4.1 NSCs implemented between trusted and untrusted networks (DMZ).
+  * 1.4.2 Inbound traffic from untrusted networks restricted to authorized public services.
+  * 1.4.3 Anti-spoofing measures implemented to block forged source IP addresses.
+  * 1.4.4 System components storing cardholder data not directly accessible from untrusted networks.
+  * 1.4.5 Disclosure of internal IP addresses and routing info limited to authorized parties (NAT, RFC 1918).
+- 1.5 Computing devices connecting to untrusted networks and CDE:
+  * 1.5.1 Host-based security controls running, unalterable by users, split-tunneling forbidden.
+
+Requirement 2: Apply Secure Configurations to All System Components
+- 2.1 Processes and mechanisms for applying secure configurations defined and understood.
+- 2.2 System components configured and managed securely.
+  * 2.2.1 Configuration standards cover all components, address known vulnerabilities, adhere to CIS/NIST benchmarks.
+  * 2.2.2 Vendor default accounts managed: default passwords changed per Req 8.3.6, or account disabled/removed.
+  * 2.2.3 Primary functions requiring different security levels isolated (only one primary function per system/VM).
+  * 2.2.4 Only necessary services, protocols, and functions enabled; unnecessary services removed or disabled.
+  * 2.2.5 Insecure services justified and additional security features implemented.
+  * 2.2.6 System security parameters configured to prevent misuse.
+  * 2.2.7 All non-console administrative access encrypted using strong cryptography (SSH, TLS).
+- 2.3 Wireless environments configured and managed securely: vendor defaults changed at installation; encryption keys changed when personnel leave or upon compromise.
+
+GOAL 2: PROTECT ACCOUNT DATA
+Requirement 3: Protect Stored Account Data
+- 3.1 Processes and mechanisms for protecting stored account data defined and understood.
+- 3.2 Account data storage kept to a minimum:
+  * 3.2.1 Data retention and disposal policies; quarterly verification of secure deletion.
+- 3.3 Sensitive Authentication Data (SAD) prohibited after authorization:
+  * 3.3.1 SAD not stored after authorization (full track, CVV/CVC, PIN/PIN block).
+  * 3.3.1.1 Full track data not stored post-authorization.
+  * 3.3.1.2 Card verification code (CVV2/CVC2/CID) not stored post-authorization.
+  * 3.3.1.3 PIN and PIN blocks not stored post-authorization.
+  * 3.3.2 Pre-authorization SAD encrypted with strong cryptography.
+  * 3.3.3 Issuers storing SAD must have documented business need and strong encryption.
+- 3.4 Access to displays of full PAN and ability to copy PAN restricted:
+  * 3.4.1 PAN masked when displayed (BIN and last 4 maximum permitted).
+  * 3.4.2 Technical controls prevent copying/relocating PAN via remote-access technologies.
+- 3.5 Primary Account Number (PAN) secured wherever stored:
+  * 3.5.1 PAN rendered unreadable via keyed cryptographic hashes, truncation, index tokens, or strong cryptography.
+  * 3.5.1.1 Keyed cryptographic hashes of entire PAN with key management.
+  * 3.5.1.2 Disk-level/partition encryption used only on removable media or layered with file-level encryption.
+  * 3.5.1.3 Disk encryption managed separately from OS authentication; keys not tied to user accounts.
+- 3.6 Cryptographic keys secured: access restricted to fewest custodians; key-encrypting keys (KEKs) stored separately and at least as strong as data keys; stored in fewest locations.
+- 3.7 Cryptographic key lifecycle management: generation of strong keys, secure distribution, secure storage (HSM), defined cryptoperiod and key rotation, retirement/destruction, split knowledge and dual control for manual operations, prevention of unauthorized key substitution, key custodian written acknowledgments.
+
+Requirement 4: Protect Cardholder Data with Strong Cryptography During Transmission Over Open, Public Networks
+- 4.1 Policies and procedures defined and documented.
+- 4.2 PAN protected with strong cryptography:
+  * 4.2.1 Strong cryptography and security protocols (TLS 1.2/1.3); trusted certificates; no fallback to insecure ciphers.
+  * 4.2.1.1 Inventory of trusted keys and certificates maintained and updated.
+  * 4.2.1.2 Wireless networks transmitting PAN implement industry best practice cryptography.
+  * 4.2.2 PAN encrypted whenever transmitted via end-user messaging (email, chat, SMS).
+
+GOAL 3: MAINTAIN A VULNERABILITY MANAGEMENT PROGRAM
+Requirement 5: Protect All Systems and Networks from Malicious Software
+- 5.1 Anti-malware policies and procedures defined and understood.
+- 5.2 Anti-malware deployed on all system components (except evaluated non-risk systems); detects, removes, blocks all known malware.
+  * 5.2.3 Periodic evaluation of components not at risk.
+- 5.3 Anti-malware active, maintained, and monitored: automatic updates, periodic/real-time scans, removable media automatic scanning, audit logging enabled, cannot be disabled by users without authorization.
+- 5.4 Anti-phishing mechanisms: automated technical solutions (DMARC, SPF, DKIM) to detect and protect personnel against phishing.
+
+Requirement 6: Develop and Maintain Secure Systems and Software
+- 6.1 Secure system development processes defined and understood.
+- 6.2 Bespoke and custom software developed securely:
+  * 6.2.1 S-SDLC incorporating security during each stage.
+  * 6.2.2 Software development personnel trained at least once every 12 months in secure coding and testing tools.
+  * 6.2.3 Code reviews conducted prior to production release; management approval.
+  * 6.2.4 Software engineering methods mitigate common attacks: injection flaws (SQL, LDAP, command), buffer/pointer manipulation, cryptographic flaws, business logic flaws (XSS, CSRF), access control bypass.
+- 6.3 Vulnerabilities identified and managed: risk ranking (high/critical); software inventory of bespoke and third-party components; critical patches installed within 1 month.
+- 6.4 Public-facing web applications protected: automated technical solution (WAF/RASP) detecting/preventing attacks; payment page scripts managed (authorized, integrity verified via CSP/SRI, inventory maintained).
+- 6.5 Change control: documented change approval, security impact testing, pre-production environments separated from production with access controls, separation of duties, no live PANs in pre-production, test data removed before production.
+
+GOAL 4: IMPLEMENT STRONG ACCESS CONTROL MEASURES
+Requirement 7: Restrict Access to System Components and Cardholder Data by Business Need to Know
+- 7.1 Access control policies defined and understood.
+- 7.2 Access control model: RBAC/ABAC, least privileges, approved privileges, 6-month access review for all user accounts, least privilege for application/system accounts, direct query access to cardholder data repositories restricted to administrators only.
+- 7.3 Default deny-all access control system covering all components.
+
+Requirement 8: Identify Users and Authenticate Access to System Components
+- 8.1 Policies defined and understood.
+- 8.2 User identification: unique user IDs, group/shared IDs exception-only with break-glass approval, unique vendor authentication factors, immediate revocation of terminated accounts, 90-day inactive account disablement, 15-minute session idle timeout.
+- 8.3 Strong authentication: passwords minimum 12 characters (alphanumeric), no reuse of last 4 passwords, 90-day password change or dynamic security posture analysis, strong cryptography for stored credentials, user identity verification before factor resets.
+- 8.4 Multi-Factor Authentication (MFA): mandatory for all non-console administrative access into CDE, all non-console access into CDE, and all remote access from outside entity's network.
+- 8.5 MFA systems resistant to replay attacks and administrative bypass.
+- 8.6 Application and system accounts: no interactive login unless exceptional and approved, no hard-coded credentials in code or config files, periodic credential rotation.
+
+Requirement 9: Restrict Physical Access to Cardholder Data
+- 9.1 Physical access policies defined and understood.
+- 9.2 Physical access controls: facility entry controls, CCTV/monitoring stored at least 3 months, restricted publicly accessible network jacks, locked consoles in sensitive areas.
+- 9.3 Personnel and visitor access: badges, escort at all times, visitor logs retained at least 3 months, immediate revocation upon termination.
+- 9.4 Media security: offline media backups secured, annual storage facility review, media classification, secure tracked couriers, management approval for media movement, annual media inventory, destruction via cross-cut shredding, degaussing, or physical disintegration (NIST SP 800-88).
+- 9.5 POI devices protected against tampering/substitution: POI device list maintained, periodic inspection for skimmers, personnel training.
+
+GOAL 5: REGULARLY MONITOR AND TEST NETWORKS
+Requirement 10: Log and Monitor All Access to System Components and Cardholder Data
+- 10.1 Logging policies defined and understood.
+- 10.2 Audit logs enabled and active: capture user access to CHD, administrative actions, audit log access, invalid access attempts, credential changes, log service start/stop/pause, system object creation/deletion. Log entries record user ID, event type, date/time, success/fail, origin, affected resource.
+- 10.3 Audit logs protected: read access restricted, protected from modification, backed up promptly to secure central log server, file integrity monitoring (FIM) on logs.
+- 10.4 Daily review of security events, critical system logs, security device logs; automated log review mechanisms.
+- 10.5 Audit log history retained for at least 12 months, with at least 3 months immediately available online.
+- 10.6 NTP time-synchronization across all systems.
+- 10.7 Critical security control system failures detected, alerted, and addressed promptly.
+
+Requirement 11: Test Security of Systems and Networks Regularly
+- 11.1 Testing policies defined and understood.
+- 11.2 Quarterly rogue wireless access point detection.
+- 11.3 Vulnerability scans: quarterly internal vulnerability scans and external ASV scans; rescans until high/critical resolved; scans after significant change.
+- 11.4 Penetration testing: annual internal and external penetration testing covering CDE perimeter and critical systems; segmentation penetration tests every 12 months (every 6 months for service providers); exploitable vulnerabilities corrected.
+- 11.5 Intrusion detection/prevention (IDS/IPS) at CDE perimeter; covert malware channel detection; weekly file integrity monitoring (FIM).
+- 11.6 Weekly change- and tamper-detection mechanism for payment pages (HTTP headers and script contents).
+
+GOAL 6: MAINTAIN AN INFORMATION SECURITY POLICY
+Requirement 12: Support Information Security with Organizational Policies and Programs
+- 12.1 Overall information security policy reviewed annually; CISO assigned executive responsibility.
+- 12.2 Acceptable use policies for end-user technologies.
+- 12.3 Targeted Risk Analysis (TRA) performed at least once every 12 months; annual review of cryptographic cipher suites; annual review of hardware/software technologies.
+- 12.4 PCI DSS compliance program managed; quarterly operational reviews for service providers.
+- 12.5 CDE scope confirmed and validated annually (and after significant changes); semi-annually for service providers.
+- 12.6 Security awareness training upon hire and at least annually, including phishing and social engineering.
+- 12.7 Personnel screening prior to hire.
+- 12.8 Third-Party Service Providers (TPSPs): maintain TPSP list, written agreements acknowledging TPSP responsibility, due diligence prior to engagement, annual compliance monitoring, responsibility matrix.
+- 12.9 TPSPs support customer compliance: provide written agreements and PCI DSS compliance evidence (AOC/ROC).
+- 12.10 Incident response plan tested annually, 24/7 incident response personnel, alert response, lessons learned, immediate incident response procedures upon detection of stored PAN outside CDE.
+
+APPENDICES:
+- Appendix A1: Multi-Tenant Service Providers (logical separation of customer environments, separate customer data, 6-month segmentation pentest, isolated customer audit logs, forensic investigation facilitation).
+- Appendix A2: POI Terminals using SSL/early TLS (formal risk mitigation and migration plan, secure service offering).
+- Appendix A3: Designated Entities Supplemental Validation (DESV) (compliance charter, quarterly scope confirmation, quarterly data discovery for cleartext PAN, DLP alerts, prompt critical control failure response).
+- Appendix B & C: Compensating Controls & Compensating Controls Worksheet.
+- Appendix D & E: Customized Approach & Targeted Risk Analysis Template.
+- Appendix F: Leveraging PCI Software Security Framework (Secure Software Standard, Secure SLC).
+- Appendix G: Glossary of Terms.

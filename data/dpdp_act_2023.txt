@@ -1,0 +1,167 @@
+THE DIGITAL PERSONAL DATA PROTECTION ACT, 2023
+(NO. 22 OF 2023)
+[11th August, 2023.]
+An Act to provide for the processing of digital personal data in a manner that recognises both the right of individuals to protect their personal data and the need to process such personal data for lawful purposes and for matters connected therewith or incidental thereto.
+BE it enacted by Parliament in the Seventy-fourth Year of the Republic of India as follows:––
+
+CHAPTER I: PRELIMINARY
+1. Short title and commencement:
+(1) This Act may be called the Digital Personal Data Protection Act, 2023.
+(2) It shall come into force on such date as the Central Government may appoint.
+
+2. Definitions:
+(a) "Appellate Tribunal" means the Telecom Disputes Settlement and Appellate Tribunal (TDSAT) established under section 14 of the TRAI Act, 1997;
+(b) "automated" means any digital process capable of operating automatically in response to instructions given or otherwise for the purpose of processing data;
+(c) "Board" means the Data Protection Board of India established under section 18;
+(d) "certain legitimate uses" means uses referred to in section 7;
+(e) "Chairperson" means the Chairperson of the Board;
+(f) "child" means an individual who has not completed the age of eighteen years;
+(g) "Consent Manager" means a person registered with the Board, acting as single point of contact to enable Data Principal to give, manage, review, withdraw consent;
+(h) "data" means representation of information, facts, concepts, opinions or instructions suitable for communication, interpretation or processing by human beings or automated means;
+(i) "Data Fiduciary" means any person who alone or in conjunction with other persons determines purpose and means of processing personal data;
+(j) "Data Principal" means the individual to whom personal data relates (including parents/guardians for children and persons with disabilities);
+(k) "Data Processor" means any person who processes personal data on behalf of a Data Fiduciary;
+(l) "Data Protection Officer" means an individual appointed by Significant Data Fiduciary under section 10(2)(a);
+(m) "digital office" means an office adopting online mechanism for proceedings from receipt to disposal;
+(n) "digital personal data" means personal data in digital form;
+(o) "gain" means gain in property, services, remuneration, or financial advantage;
+(p) "loss" means loss in property, services, remuneration, or financial advantage;
+(q) "Member" means Member of the Board including Chairperson;
+(r) "notification" means notification published in the Official Gazette;
+(s) "person" includes individual, HUF, company, firm, association, State, artificial juristic person;
+(t) "personal data" means any data about an individual who is identifiable by or in relation to such data;
+(u) "personal data breach" means any unauthorised processing of personal data or accidental disclosure, acquisition, sharing, use, alteration, destruction or loss of access to personal data compromising confidentiality, integrity or availability;
+(v) "prescribed" means prescribed by rules made under this Act;
+(w) "proceeding" means action taken by Board under provisions of this Act;
+(x) "processing" means wholly or partly automated operation performed on digital personal data (collection, recording, organization, structuring, storage, adaptation, retrieval, use, alignment, combination, indexing, sharing, disclosure, dissemination, restriction, erasure, destruction);
+(y) "she" includes reference to individual irrespective of gender;
+(z) "Significant Data Fiduciary" means any Data Fiduciary notified by Central Government under section 10;
+(za) "specified purpose" means purpose mentioned in notice given by Data Fiduciary;
+(zb) "State" means State under article 12 of Constitution.
+
+3. Application of Act:
+(a) Applies to processing of digital personal data within India collected in digital form or non-digital form digitised subsequently.
+(b) Applies to processing of digital personal data outside India if in connection with offering goods or services to Data Principals in India.
+(c) Does not apply to personal or domestic processing, or personal data made publicly available by Data Principal or under legal obligation.
+
+CHAPTER II: OBLIGATIONS OF DATA FIDUCIARY
+4. Grounds for processing personal data:
+(1) Only for lawful purpose for which Data Principal has given consent or for certain legitimate uses.
+(2) Lawful purpose means any purpose not expressly forbidden by law.
+
+5. Notice:
+(1) Request for consent accompanied or preceded by notice informing personal data, purpose, exercise of rights under Sec 6(4) & Sec 13, and complaint manner to Board.
+(2) Prior consent notice obligation as soon as reasonably practicable.
+(3) Notice access option in English or any Eighth Schedule language.
+
+6. Consent:
+(1) Free, specific, informed, unconditional, unambiguous with clear affirmative action, limited to specified purpose and necessary data.
+(2) Invalid consent part infringing Act provisions is void.
+(3) Clear, plain language request with DPO or authorized contact details.
+(4) Right to withdraw consent at any time with comparable ease.
+(5) Consequences of withdrawal borne by Data Principal, not affecting prior legality.
+(6) Fiduciary must cease and cause Data Processors to cease processing upon consent withdrawal within reasonable time.
+(7)-(10) Consent Manager registration and accountability; burden of proof of notice and consent on Data Fiduciary.
+
+7. Certain legitimate uses:
+(a) Specified purpose for voluntary provision without objection;
+(b) State subsidies, benefits, services, certificates, licenses;
+(c) Sovereign functions, security of State, integrity of India;
+(d) Legal disclosure obligations;
+(e) Judicial orders and decrees;
+(f) Medical emergency involving threat to life/health;
+(g) Epidemics and public health threats;
+(h) Disaster relief and breakdown of public order;
+(i) Employment purposes, safeguarding employer from liability, trade secrets, intellectual property.
+
+8. General obligations of Data Fiduciary:
+(1) Responsibility for compliance irrespective of contrary agreement or principal's failure, including processing by Data Processor.
+(2) Engagement of Data Processor only under valid contract.
+(3) Completeness, accuracy and consistency when used for decisions or disclosed to other fiduciaries.
+(4) Implementation of appropriate technical and organisational measures.
+(5) Protection of personal data by taking reasonable security safeguards to prevent personal data breach [Penalty up to ₹250 crore].
+(6) Intimation of personal data breach to Board and affected Data Principals in prescribed form [Penalty up to ₹200 crore].
+(7) Erasure of personal data upon consent withdrawal or when specified purpose no longer served, and cause Data Processors to erase [Purpose limitation & storage limitation].
+(8)-(11) Criteria for determining purpose no longer served, DPO contact publication, grievance redressal mechanism.
+
+9. Processing of personal data of children and persons with disability:
+(1) Verifiable parental or lawful guardian consent before processing [Penalty up to ₹200 crore].
+(2) No processing likely to cause detrimental effect on child's well-being.
+(3) Prohibited tracking, behavioural monitoring, or targeted advertising directed at children [Penalty up to ₹200 crore].
+(4)-(5) Exemptions and age threshold variations by Central Government.
+
+10. Additional obligations of Significant Data Fiduciary:
+(1) Factors: volume/sensitivity of data, risk to rights, sovereignty, democracy, security of State, public order.
+(2) Mandates:
+(a) Appoint DPO based in India, responsible to Board of Directors, point of contact for grievance redressal;
+(b) Appoint independent data auditor for compliance evaluation;
+(c) Periodic Data Protection Impact Assessment (DPIA), periodic audit, and prescribed measures [Penalty up to ₹150 crore].
+
+CHAPTER III: RIGHTS AND DUTIES OF DATA PRINCIPAL
+11. Right to access information about personal data:
+(1) Right to summary of processed data and activities, identities of all fiduciaries/processors shared with, and other prescribed information.
+(2) Exemption for sharing pursuant to written request for crime prevention/detection.
+
+12. Right to correction and erasure of personal data:
+(1) Right to correction, completion, updating and erasure.
+(2) Fiduciary duty to correct inaccurate, complete incomplete, and update data.
+(3) Fiduciary duty to erase unless retention necessary for purpose or legal compliance.
+
+13. Right of grievance redressal:
+(1) Readily available means of grievance redressal provided by Fiduciary or Consent Manager.
+(2) Response within prescribed period.
+(3) Exhaust grievance mechanism before approaching Board.
+
+14. Right to nominate:
+(1) Right to nominate individual to exercise rights upon death or incapacity.
+
+15. Duties of Data Principal:
+(a) Comply with applicable laws;
+(b) No impersonation;
+(c) No suppression of material information for official identifiers;
+(d) No false or frivolous grievances or complaints;
+(e) Furnish only verifiably authentic information [Penalty up to ₹10,000].
+
+CHAPTER IV: SPECIAL PROVISIONS
+16. Processing of personal data outside India:
+(1) Central Government may restrict transfer of personal data to notified countries/territories.
+(2) Higher protection/restriction in other laws takes precedence.
+
+17. Exemptions:
+(1) Legal rights enforcement, judicial/regulatory functions, prevention/investigation of offences, contracts with non-resident principals, mergers/compromises, loan defaulters under IBC 2016.
+(2) State instrumentalities for national security, sovereignty, public order, research/archiving/statistical purposes.
+(3)-(5) Exemptions for startups and temporary 5-year notification exemptions.
+
+CHAPTER V: DATA PROTECTION BOARD OF INDIA
+18-26. Establishment of Board, body corporate, digital office, composition, 2-year term, disqualifications, resignations, proceedings, officers, public servants status under IPC Section 21, powers of Chairperson.
+
+CHAPTER VI: POWERS, FUNCTIONS AND PROCEDURE OF BOARD
+27. Powers and functions: Urgent remedial/mitigation directions for breach, inquiry on complaints or references, inquiry into consent manager breaches, issuing binding directions.
+28. Digital by design procedure, civil court powers under CPC 1908 (summoning, evidence, inspecting data/documents), interim orders, closing frivolous complaints with costs.
+
+CHAPTER VII: APPEAL AND ALTERNATE DISPUTE RESOLUTION
+29. Appeal to TDSAT within 60 days. Disposal within 6 months.
+30. Orders executable as civil court decree.
+31. Mediation of disputes.
+32. Voluntary undertaking acceptance; failure deemed breach under Section 33.
+
+CHAPTER VIII: PENALTIES AND ADJUDICATION
+33. Monetary penalties determined based on nature, gravity, duration, data type, repetitive nature, gain/loss, mitigation timeliness, proportionality.
+34. Penalty proceeds credited to Consolidated Fund of India.
+
+CHAPTER IX: MISCELLANEOUS
+35. Good faith protection for Government and Board.
+36. Power to call for information from Fiduciaries/Intermediaries.
+37. Power of Central Government to issue blocking directions for computer resources upon two or more penalty instances.
+38. Overriding effect: Provisions in addition to and prevail over conflicting laws.
+39. Bar of jurisdiction of civil courts.
+40-44. Rule-making powers, laying before Parliament, amendments to TRAI Act 1997, IT Act 2000 (omission of Section 43A), RTI Act 2005 (Section 8(1)(j) substitution).
+
+THE SCHEDULE (Section 33(1)) - MONETARY PENALTIES:
+1. Breach in observing obligation of Data Fiduciary to take reasonable security safeguards to prevent personal data breach under Section 8(5): May extend to 250 crore rupees (₹250,00,00,000).
+2. Breach in observing obligation to give Board or affected Data Principal notice of personal data breach under Section 8(6): May extend to 200 crore rupees (₹200,00,00,000).
+3. Breach in observance of additional obligations in relation to children under Section 9: May extend to 200 crore rupees (₹200,00,00,000).
+4. Breach in observance of additional obligations of Significant Data Fiduciary under Section 10: May extend to 150 crore rupees (₹150,00,00,000).
+5. Breach in observance of duties under Section 15 by Data Principal: May extend to ten thousand rupees (₹10,000).
+6. Breach of any term of voluntary undertaking accepted under Section 32: Up to extent applicable for breach.
+7. Breach of any other provision of Act or rules: May extend to fifty crore rupees (₹50,00,00,000).
