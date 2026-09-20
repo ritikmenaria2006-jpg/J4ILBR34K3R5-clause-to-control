@@ -1,10 +1,21 @@
 # Clause-to-Control : Runtime AI Agent Governance Layer
-> **AI-SEC Hackfest MVP** • Compiling SEBI CSCRF & India DPDP Act 2023 into deterministic, real-time tool permissions for autonomous AI agents.
+AI-SEC HackFest 2026 MVP • A runtime governance layer for AI agents that translates curated regulatory and organizational requirements into deterministic controls for tool access.
 
+Demo note: This project uses curated/mock regulatory mappings for demonstration and does not constitute legal advice, compliance certification, or a claim of complete regulatory coverage.
+
+## Team
+
+- Ritik Menaria — Team Captain
+- Navaneet Chandran
+- Yash Agarwal
+
+## Hackathon
+
+Built for AI-SEC HackFest 2026 at Manipal Institute of Technology, Bengaluru.
 ---
 
 ## 💡 Executive Summary
-Modern enterprise security teams hand AI agents static PDF rulebooks (like the **SEBI Cybersecurity and Cyber Resilience Framework (CSCRF)** or India's **Digital Personal Data Protection Act (DPDP) 2023**), yet agents execute black-box actions with unverified tool calls.
+Enterprise governance requirements often exist as policies, regulatory documents and audit guidance, while AI agents increasingly interact with tools, data and business systems. Clause-to-Control explores how these requirements can be translated into runtime controls that influence agent actions.
 
 **Clause-to-Control** flips this model:
 1. **Compiles** unstructured regulatory text into an enforceable, deterministic policy permission matrix (`policy_rules.json`).
