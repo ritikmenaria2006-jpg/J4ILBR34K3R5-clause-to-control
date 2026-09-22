@@ -6,7 +6,7 @@ Demo note: This project uses curated/mock regulatory mappings for demonstration 
 ## Team
 
 - Ritik Menaria — Team Captain
-- Navaneet Chandran
+- Navaneet Sushil Chandran
 - Yash Agarwal
 
 ## Hackathon
